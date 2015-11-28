@@ -1,0 +1,30 @@
+.tooltip-tip {
+  position: absolute;
+  display: block;
+  -webkit-box-shadow: 1px 1px 3px #d8d8d8;
+  -moz-box-shadow: 1px 1px 3px #d8d8d8;
+  box-shadow: 1px 1px 3px #d8d8d8;
+  background-color: #fff;
+  max-width: 300px;
+}
+
+.tooltip-tip span {
+  padding: 10px;
+  display: block;
+}
+
+.tooltip-tip.compact {
+  border-top: 4px solid #000;
+  width: 100%;
+  max-width: none;
+}
+
+.tooltip-tip.compact span {
+  display: block;
+  padding: 40px;
+}
+
+.tooltip-overlay {
+  background: #000;
+  opacity: 0.4;
+}

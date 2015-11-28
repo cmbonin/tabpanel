@@ -1,40 +1,34 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
-<title>Responsive tab panel example</title>
+<title>Responsive tooltip example</title>
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-<script type="text/javascript" src="../tabpanel.jquery.js"></script>
+<script type="text/javascript" src="../responsiveTooltip.jquery.js"></script>
 <script type="text/javascript">
 	$(document).ready(function(){
-		$('.tab-panel').tabPanel();
+		$('.tooltip').responsiveTooltip();
 	});
 </script>
-<link rel="stylesheet" href="css/tabpanel.css">
+<link rel="stylesheet" href="css/responsiveTooltip.css">
 <style>
 body{
   font-size: 16px;
   color: #444;
   font-family: arial, sans-serif;
   background: #fff;
+  padding: 0;
+  margin: 0;
+}
+.wrapper{
+	margin: 20px 50px;
+}
+.tooltip{
+border-bottom: 1px dashed #000;
 }
 </style>
 <body>
-	<div class="tab-panel">
-		<div class="panel-title active"><a href="panel-0">Tab 1</a></div>
-		<div class="panel-title"><a href="panel-1">Tab 2</a></div>
-		<div class="panel panel-0  active">
-			<div class="panel-title"><a href="panel-0">Tab 1</a></div>
-			<div class="panel-content">
-					Content one.
-				</div>
-			</div>
-			<div class="panel panel-1 ">
-				<div class="panel-title"><a href="panel-1">Tab 2</a></div>
-				<div class="panel-content">
-						Content two.
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+<div class="wrapper">
+	<h1>Tooltip example</h1>
+	<p><a class="tooltip" title="Vivamus tooltip content">Tip trigger</a> fermentum semper porta. Nunc diam velit, adipiscing ut tristique vitae, sagittis vel odio. Maecenas convallis ullamcorper ultricies. Curabitur ornare, ligula semper consectetur sagittis, nisi diam iaculis velit, id fringilla sem nunc vel mi. Nam dictum, odio nec pretium volutpat, arcu ante placerat erat, non tristique elit urna et turpis. Quisque mi metus, ornare sit amet fermentum et, tincidunt et orci. </p>
+</div>
 </body>
 </html>
