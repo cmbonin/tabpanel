@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Responsive tab panel example</title>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="../tabpanel.jquery.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('.tab-panel').tabPanel();
+	});
+</script>
+<link rel="stylesheet" href="css/tabpanel.css">
+<style>
+body{
+  font-size: 16px;
+  color: #444;
+  font-family: arial, sans-serif;
+  background: #fff;
+}
+</style>
+<body>
+	<div class="tab-panel">
+		<div class="panel-title active"><a href="panel-0">Tab 1</a></div>
+		<div class="panel-title"><a href="panel-1">Tab 2</a></div>
+		<div class="panel panel-0  active">
+			<div class="panel-title"><a href="panel-0">Tab 1</a></div>
+			<div class="panel-content">
+					Content one.
+				</div>
+			</div>
+			<div class="panel panel-1 ">
+				<div class="panel-title"><a href="panel-1">Tab 2</a></div>
+				<div class="panel-content">
+						Content two.
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
